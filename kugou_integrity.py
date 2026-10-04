@@ -61,7 +61,7 @@ PROTECTED_FILES = [
     "install_mac.command",
     "docs/python-download-page.png",
     "docs/logo.png",
-    "docs/KuGou Unlocker User Manual.pdf",
+    "KuGou Unlocker User Manual.pdf",
 ]
 
 # Ed25519 public key (paired with the developer's _internal/ed25519_secret.key;

@@ -1,20 +1,20 @@
 {
   "files": {
+    "KuGou Unlocker User Manual.pdf": {
+      "sha256": "7676a76b300debf4d608a0eecbd926bfe2ba19b33a78bd5a183cacbd954f8c7a",
+      "size": 795820
+    },
     "LICENSE": {
       "sha256": "af92d83f1f4f5d77b6001faf5500f0ffef5f3a0772f64a5db0d3b554c33903b0",
       "size": 3664
     },
     "README.md": {
-      "sha256": "1fbde2965f2c2623eae95175d4df703af6a5ffe526ee2832e4306275572c0088",
-      "size": 18371
+      "sha256": "abe37ae5a4e08e42c2ac5b3b8beff997fbd6207490a5a61b597f87e9236fc170",
+      "size": 18361
     },
     "SKILL.md": {
-      "sha256": "e4c6f6586c6bc6b940cdbd97afc0744732142db05e6d3396b8e82a149124ed94",
-      "size": 6730
-    },
-    "docs/KuGou Unlocker User Manual.pdf": {
-      "sha256": "c4ca3f0d10235340ea80fbfaa60bf096aab72aa1938d0bcf44c482f3ea2387ff",
-      "size": 781354
+      "sha256": "118c2dfb6260dc1c5889b28c2ce3cc6126f48310ef0e00069e5e5d6b760c6682",
+      "size": 6720
     },
     "docs/logo.png": {
       "sha256": "425b8f596e657b760a7a48a1f543cd44d03fbd0d4ed7b795d58fdce442fb40b6",
@@ -37,11 +37,11 @@
       "size": 10280
     },
     "kugou_integrity.py": {
-      "sha256": "a469ec455b9d919f19cd77c7b595255c0fb587dcc9bcab024cc992c3d5543607",
-      "size": 11201
+      "sha256": "13b34e0ea59bdc87abb019486bceb5ca7787d1e1da72bc9554cd8377008e6b1e",
+      "size": 11196
     },
     "kugou_unlock.py": {
-      "sha256": "c1cbacf58e41036542263e16d746e7bf5886c393385eca51c4ca2b28b434471c",
+      "sha256": "6864e0e29185c469fba105320e9e0d5a3282bf4f1e563146508e69d4890e58d9",
       "size": 41213
     },
     "kugou_unlock_gui.py": {
@@ -58,10 +58,10 @@
     }
   },
   "protected_files": [
+    "KuGou Unlocker User Manual.pdf",
     "LICENSE",
     "README.md",
     "SKILL.md",
-    "docs/KuGou Unlocker User Manual.pdf",
     "docs/logo.png",
     "docs/python-download-page.png",
     "install_mac.command",

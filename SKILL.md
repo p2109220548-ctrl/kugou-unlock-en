@@ -30,7 +30,7 @@ This tool restores those encrypted songs into **normal FLAC / MP3 files** that p
 | Optional transcoding (needs FFmpeg) | Also convert to MP3 320k and other formats |
 | Privacy first | Runs fully locally — **nothing is ever uploaded** |
 
-> 📄 A complete illustrated guide ships with the app: **`docs/KuGou Unlocker User Manual.pdf`**.
+> 📄 A complete illustrated guide ships with the app: **`KuGou Unlocker User Manual.pdf`**.
 
 ---
 
@@ -106,7 +106,7 @@ python kugou_unlock.py src/ out/ --only kgm,kgg --procs 8         # filter forma
 - **Double-clicking `.py` / `.bat` does nothing**: run `install_windows.bat` once first; then use the desktop shortcut or `start_kugou_unlocker.bat`.
 - **Want MP3**: choose MP3 output in the app (needs FFmpeg). Most of the time "keep original format" is the best choice.
 
-More answers in `README.md` and `docs/KuGou Unlocker User Manual.pdf`.
+More answers in `README.md` and `KuGou Unlocker User Manual.pdf`.
 
 ---
 

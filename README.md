@@ -8,7 +8,7 @@
 
 Three clicks · No command line · Beginner-friendly · Fully lossless · Fully offline
 
-📄 **Full illustrated guide**: [`docs/KuGou Unlocker User Manual.pdf`](docs/KuGou%20Unlocker%20User%20Manual.pdf)
+📄 **Full illustrated guide**: [`KuGou Unlocker User Manual.pdf`](KuGou%20Unlocker%20User%20Manual.pdf)
 
 </div>
 
