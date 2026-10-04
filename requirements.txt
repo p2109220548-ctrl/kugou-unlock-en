@@ -1,0 +1,11 @@
+# Dependencies (the GUI itself needs nothing extra — tkinter ships with Python)
+# Install with: pip install -r requirements.txt
+
+# Required only for .kgg (AES page decryption of the key database). Python >= 3.11
+pycryptodome>=3.19
+
+# Optional: ~20x speedup for .kgm/.kgma/.vpr (falls back to pure Python if missing)
+numpy>=1.24
+
+# FFmpeg: only needed when transcoding to another format ("keep original" works without it)
+# Windows download: https://ffmpeg.org/download.html — add the bin folder to PATH

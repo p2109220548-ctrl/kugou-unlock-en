@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Never commit user data / media / key material
+*.kgm
+*.kgma
+*.vpr
+*.kgg
+*.flac
+*.mp3
+*.wav
+*.ogg
+*.m4a
+KGMusicV3.db*
+kgg.key
+decrypted/
+out/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Internal docs & developer tools (never uploaded)
+_internal/
