@@ -61,7 +61,7 @@ except ImportError:  # pragma: no cover
 # ---------------------------------------------------------------------------
 __author__ = "shushuu (https://github.com/p2109220548-ctrl)"
 __license__ = "Personal-NonCommercial-Use-Only (see LICENSE file)"
-__version__ = "2.3.0"
+__version__ = "2.4.0"
 __title__ = "KuGou Unlocker"
 
 AUDIO_EXTS = ("kgm", "kgma", "vpr", "kgg")    # supported encrypted inputs
