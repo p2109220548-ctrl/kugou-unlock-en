@@ -1,0 +1,78 @@
+{
+  "files": {
+    "LICENSE": {
+      "sha256": "af92d83f1f4f5d77b6001faf5500f0ffef5f3a0772f64a5db0d3b554c33903b0",
+      "size": 3664
+    },
+    "README.md": {
+      "sha256": "1fbde2965f2c2623eae95175d4df703af6a5ffe526ee2832e4306275572c0088",
+      "size": 18371
+    },
+    "SKILL.md": {
+      "sha256": "e4c6f6586c6bc6b940cdbd97afc0744732142db05e6d3396b8e82a149124ed94",
+      "size": 6730
+    },
+    "docs/KuGou Unlocker User Manual.pdf": {
+      "sha256": "c4ca3f0d10235340ea80fbfaa60bf096aab72aa1938d0bcf44c482f3ea2387ff",
+      "size": 781354
+    },
+    "docs/logo.png": {
+      "sha256": "425b8f596e657b760a7a48a1f543cd44d03fbd0d4ed7b795d58fdce442fb40b6",
+      "size": 513424
+    },
+    "docs/python-download-page.png": {
+      "sha256": "e13fe565ba2a11b3a95427b2a6b4223d2c58f14b477625c4c803d49486c0bfc1",
+      "size": 389704
+    },
+    "install_mac.command": {
+      "sha256": "4cb3ba0dbf9b51f0275319a20c8c150368d238f7cc3aed6796415a0e879c58a6",
+      "size": 3648
+    },
+    "install_windows.bat": {
+      "sha256": "030deee844a27ac21a3f64d9959d36a84469bb861f701b5a8d13e0273e923efe",
+      "size": 813
+    },
+    "install_windows.ps1": {
+      "sha256": "25bed88ede972186c5ed2584184425278c27baec5785ee2dff4b0ce5c9613f47",
+      "size": 10280
+    },
+    "kugou_integrity.py": {
+      "sha256": "a469ec455b9d919f19cd77c7b595255c0fb587dcc9bcab024cc992c3d5543607",
+      "size": 11201
+    },
+    "kugou_unlock.py": {
+      "sha256": "c1cbacf58e41036542263e16d746e7bf5886c393385eca51c4ca2b28b434471c",
+      "size": 41213
+    },
+    "kugou_unlock_gui.py": {
+      "sha256": "ed62421b79f6a509bdf4c297f3c4fb4b8e7fcf98c448b7298841eaadaea3755a",
+      "size": 22477
+    },
+    "requirements.txt": {
+      "sha256": "bbc810c1899747daba3e1c8d46cd77b93d56b31fa99cd061c77ddcba6353f987",
+      "size": 507
+    },
+    "start_kugou_unlocker.bat": {
+      "sha256": "4136bfcbb0a735683850e811b77dab8baf05573dbc2b281a080b5b02ae03e5dc",
+      "size": 484
+    }
+  },
+  "protected_files": [
+    "LICENSE",
+    "README.md",
+    "SKILL.md",
+    "docs/KuGou Unlocker User Manual.pdf",
+    "docs/logo.png",
+    "docs/python-download-page.png",
+    "install_mac.command",
+    "install_windows.bat",
+    "install_windows.ps1",
+    "kugou_integrity.py",
+    "kugou_unlock.py",
+    "kugou_unlock_gui.py",
+    "requirements.txt",
+    "start_kugou_unlocker.bat"
+  ],
+  "schema": 2,
+  "signing": "Ed25519 (RFC 8032) — private key held by the developer only"
+}
