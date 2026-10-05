@@ -1,20 +1,20 @@
 {
   "files": {
     "KuGou Unlocker User Manual.pdf": {
-      "sha256": "7676a76b300debf4d608a0eecbd926bfe2ba19b33a78bd5a183cacbd954f8c7a",
-      "size": 795820
+      "sha256": "966a229f806141d85abe22bdcda34cb4c013d68d06f7f4460873f689e4834159",
+      "size": 795887
     },
     "LICENSE": {
       "sha256": "af92d83f1f4f5d77b6001faf5500f0ffef5f3a0772f64a5db0d3b554c33903b0",
       "size": 3664
     },
     "README.md": {
-      "sha256": "abe37ae5a4e08e42c2ac5b3b8beff997fbd6207490a5a61b597f87e9236fc170",
-      "size": 18361
+      "sha256": "c81f61339acdf1d39a7fd39642c331b8fb9c58fc922c07c709a254ba14035815",
+      "size": 18901
     },
     "SKILL.md": {
-      "sha256": "118c2dfb6260dc1c5889b28c2ce3cc6126f48310ef0e00069e5e5d6b760c6682",
-      "size": 6720
+      "sha256": "cb92ce71f4af7f3fb5a61353736900953d58ecbe81fda432f61ad820faa3470f",
+      "size": 6761
     },
     "docs/logo.png": {
       "sha256": "425b8f596e657b760a7a48a1f543cd44d03fbd0d4ed7b795d58fdce442fb40b6",
@@ -33,12 +33,12 @@
       "size": 813
     },
     "install_windows.ps1": {
-      "sha256": "25bed88ede972186c5ed2584184425278c27baec5785ee2dff4b0ce5c9613f47",
-      "size": 10280
+      "sha256": "f83b13e440b4229a645784021d7ba5ea7207317bc5e1ad7529feb88441e9eb8a",
+      "size": 10941
     },
     "kugou_integrity.py": {
-      "sha256": "13b34e0ea59bdc87abb019486bceb5ca7787d1e1da72bc9554cd8377008e6b1e",
-      "size": 11196
+      "sha256": "62c64cb3748d6a8e8fa8ec90b2772c203f0dcd4612307afb0c9aa766f7da711f",
+      "size": 11227
     },
     "kugou_unlock.py": {
       "sha256": "6864e0e29185c469fba105320e9e0d5a3282bf4f1e563146508e69d4890e58d9",
@@ -47,6 +47,10 @@
     "kugou_unlock_gui.py": {
       "sha256": "ed62421b79f6a509bdf4c297f3c4fb4b8e7fcf98c448b7298841eaadaea3755a",
       "size": 22477
+    },
+    "python-3.14.8-amd64.exe": {
+      "sha256": "759be887b96e736a3ca886daf8d575f18fcae1a09efab6902f42d59e8999f8ef",
+      "size": 33387464
     },
     "requirements.txt": {
       "sha256": "bbc810c1899747daba3e1c8d46cd77b93d56b31fa99cd061c77ddcba6353f987",
@@ -70,6 +74,7 @@
     "kugou_integrity.py",
     "kugou_unlock.py",
     "kugou_unlock_gui.py",
+    "python-3.14.8-amd64.exe",
     "requirements.txt",
     "start_kugou_unlocker.bat"
   ],

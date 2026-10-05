@@ -8,4 +8,4 @@
 # 酷狗音乐解锁器 · 开发者: 鼠鼠shushuu (shushuu)
 # https://github.com/p2109220548-ctrl · 仅限个人使用 · 禁止商用
 
-ANCHOR_SIGNATURE = "9c7634a119fc1be589570ad1dc4163ae44359b73d3dbb4a5285c8fa655b1297dac52ef51c2f2525b389d0592f401ced245499a9c0d3e63b6cd202aa4df859e03"
+ANCHOR_SIGNATURE = "ac1ec800b7296c8bab27f46c72fd8a6867a3f6530051d746f1660120a2a10e00ff5df7f48a30bea35f01caa9d49579b1115ddeb6348dcc3a0df04b7560c03508"

@@ -30,9 +30,11 @@ function Find-Python {
               if ($src) { $candidates += $src } } catch {}
     }
     foreach ($p in @(
+        "$env:LOCALAPPDATA\Programs\Python\Python314\python.exe",
         "$env:LOCALAPPDATA\Programs\Python\Python313\python.exe",
         "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe",
         "$env:LOCALAPPDATA\Programs\Python\Python311\python.exe",
+        "C:\Program Files\Python314\python.exe",
         "C:\Program Files\Python313\python.exe",
         "C:\Program Files\Python312\python.exe",
         "C:\Program Files\Python311\python.exe"
@@ -47,24 +49,33 @@ function Find-Python {
     return $null
 }
 
-# Fully automatic Python install (official source + mirrors, silent mode).
-# Returns the python path on success; on failure it prints guidance and exits.
+# Fully automatic Python install: prefers the official offline installer bundled
+# with this package (no internet needed); falls back to official source + mirrors
+# if the bundled file is missing. Returns the python path on success.
 function Install-PythonAuto {
-    $installer = Join-Path $env:TEMP "python-3.12.8-amd64.exe"
+    $installer = Join-Path $env:TEMP "python-3.14.8-amd64.exe"
     $ok = $false
-    # Official source first, then mirrors
-    $urls = @(
-        "https://www.python.org/ftp/python/3.12.8/python-3.12.8-amd64.exe",
-        "https://registry.npmmirror.com/-/binary/python/3.12.8/python-3.12.8-amd64.exe",
-        "https://mirrors.huaweicloud.com/python/3.12.8/python-3.12.8-amd64.exe"
-    )
-    foreach ($u in $urls) {
-        try {
-            Write-Host "    Downloading from $u …"
-            [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-            Invoke-WebRequest -Uri $u -OutFile $installer -UseBasicParsing
-            if ((Get-Item $installer).Length -gt 10MB) { $ok = $true; break }
-        } catch { Write-Warn2 "Download failed from this mirror, trying the next one…" }
+    # First choice: the offline installer shipped inside this package
+    $localInstaller = Join-Path $scriptDir "python-3.14.8-amd64.exe"
+    if (Test-Path $localInstaller) {
+        Write-Ok "Found the bundled Python offline installer (no internet needed)"
+        Copy-Item $localInstaller $installer -Force
+        $ok = $true
+    } else {
+        # Bundled installer missing: official source first, then mirrors
+        $urls = @(
+            "https://www.python.org/ftp/python/3.14.8/python-3.14.8-amd64.exe",
+            "https://registry.npmmirror.com/-/binary/python/3.14.8/python-3.14.8-amd64.exe",
+            "https://mirrors.huaweicloud.com/python/3.14.8/python-3.14.8-amd64.exe"
+        )
+        foreach ($u in $urls) {
+            try {
+                Write-Host "    Downloading from $u …"
+                [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+                Invoke-WebRequest -Uri $u -OutFile $installer -UseBasicParsing
+                if ((Get-Item $installer).Length -gt 10MB) { $ok = $true; break }
+            } catch { Write-Warn2 "Download failed from this mirror, trying the next one…" }
+        }
     }
     if (-not $ok) {
         Write-Warn2 "Automatic download failed. Opening the official download page instead:"
@@ -74,7 +85,7 @@ function Install-PythonAuto {
         Start-Process "https://www.python.org/downloads/latest/"
         exit 1
     }
-    Write-Ok "Downloaded. Silently installing Python (a window may flash briefly — normal, 1-2 minutes)…"
+    Write-Ok "Silently installing Python 3.14.8 (a window may flash briefly — normal, 1-2 minutes)…"
     $proc = Start-Process -FilePath $installer -ArgumentList "/quiet InstallAllUsers=0 PrependPath=1 Include_test=0 Include_launcher=1" -Wait -PassThru
     if ($proc.ExitCode -ne 0) {
         Write-Warn2 "Silent install did not finish (exit code $($proc.ExitCode)). Opening the installer for a manual run:"
@@ -85,7 +96,7 @@ function Install-PythonAuto {
     # Refresh PATH for the current session so the fresh Python is visible
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
     $found = Find-Python
-    if (-not $found) { $found = "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe" }
+    if (-not $found) { $found = "$env:LOCALAPPDATA\Programs\Python\Python314\python.exe" }
     if (-not (Test-Path $found)) {
         Write-Warn2 "Python was installed but not found automatically. Please double-click install_windows.bat once more."
         exit 1
@@ -102,7 +113,7 @@ if ($py) {
     Write-Warn2 "No Python 3.11+ detected."
     Write-Host ""
     Write-Host "    Already have Python? You don't need another copy. Choose:" -ForegroundColor Yellow
-    Write-Host "      Enter / 1 = download and install official Python (recommended · hands-off)"
+    Write-Host "      Enter / 1 = install the official Python bundled with this package (recommended · offline · hands-off)"
     Write-Host "      2 = I already have Python — point me to its python.exe"
     Write-Host "      3 = Skip installing Python (stop here; re-run this installer later)"
     Write-Host ""
@@ -183,7 +194,7 @@ try {
     $lnk.TargetPath = $pythonw
     $lnk.Arguments  = '"' + (Join-Path $scriptDir "kugou_unlock_gui.py") + '"'
     $lnk.WorkingDirectory = $scriptDir
-    $lnk.Description = "KuGou Unlocker v2.3 · by shushuu · personal use only"
+    $lnk.Description = "KuGou Unlocker v2.4 · by shushuu · personal use only"
     $lnk.Save()
     Write-Ok "Desktop shortcut created: KuGou Unlocker"
 } catch {

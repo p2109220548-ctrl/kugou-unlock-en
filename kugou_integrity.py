@@ -62,6 +62,7 @@ PROTECTED_FILES = [
     "docs/python-download-page.png",
     "docs/logo.png",
     "KuGou Unlocker User Manual.pdf",
+    "python-3.14.8-amd64.exe",
 ]
 
 # Ed25519 public key (paired with the developer's _internal/ed25519_secret.key;
