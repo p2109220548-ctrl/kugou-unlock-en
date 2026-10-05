@@ -42,7 +42,7 @@ This tool restores those encrypted songs into **normal FLAC / MP3 files** that p
    or use this [direct download link](https://github.com/p2109220548-ctrl/kugou-unlock-en/archive/refs/heads/main.zip).
 2. Right-click the ZIP → **Extract all** to somewhere easy to find (e.g. Desktop).
 3. **Windows**: double-click **`install_windows.bat`** and wait — it automatically
-   installs Python (downloading the official installer silently if missing),
+   installs Python (using the official offline installer bundled with the package, no internet needed),
    installs two small components, and creates a **"KuGou Unlocker"** desktop shortcut.
    **macOS**: double-click **`install_mac.command`** (if macOS blocks it: right-click → Open → Open).
 4. Then double-click **"KuGou Unlocker"** on the desktop (mac: `start_kugou_unlocker.command`
@@ -50,7 +50,7 @@ This tool restores those encrypted songs into **normal FLAC / MP3 files** that p
 
 > Double-clicking `install_windows.bat` requires no command-line knowledge:
 > after double-clicking, type nothing and fill in nothing — the wizard runs every
-> step itself. If it fails to download Python automatically, it opens the official
+> step itself. If the bundled installer is missing and the download fails, it opens the official
 > download page; install from there and double-click `install_windows.bat` once more.
 
 ### Option 2: command-line install (advanced users)

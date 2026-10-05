@@ -10,6 +10,8 @@ Three clicks · No command line · Beginner-friendly · Fully lossless · Fully 
 
 📄 **Full illustrated guide**: [`KuGou Unlocker User Manual.pdf`](KuGou%20Unlocker%20User%20Manual.pdf)
 
+<sub>Keywords: KuGou unlocker · KuGou music converter · decrypt kgm · kgma · vpr · kgg · encrypted KuGou songs · lossless FLAC · MP3 · WAV · OGG · M4A · car stereo music · USB music · lossless player · free open source · offline tool · audio format conversion · shushuu · kugou decrypt · lossless audio</sub>
+
 </div>
 
 ---
@@ -56,12 +58,12 @@ Then: right-click the ZIP → **Extract all** to somewhere easy to find (e.g. De
 > 1. Double-click **`install_windows.bat`** — an installer window opens; you only ever press Enter and number keys, no commands to type
 > 2. **Checking Python** (wizard step 1 of 3): the wizard looks for an existing Python automatically —
 >    - It prints `[OK] Python found: …` — do nothing, it moves on by itself
->    - It prints "No Python 3.11+ detected" with a three-way menu: **just press Enter (or type 1)** = download the official Python and install it silently (about 1-2 minutes; small windows flashing briefly are normal); type **2** = "I already have Python", press Enter, then **drag your python.exe straight into the wizard window** and press Enter (the path fills itself in; below 3.11 it asks for confirmation); type **3** = skip installing Python for now, and re-run this installer whenever you're ready
+>    - It prints "No Python 3.11+ detected" with a three-way menu: **just press Enter (or type 1)** = install the official Python bundled with this package (the offline installer ships inside the tool, no internet needed; about 1-2 minutes; small windows flashing briefly are normal); type **2** = "I already have Python", press Enter, then **drag your python.exe straight into the wizard window** and press Enter (the path fills itself in; below 3.11 it asks for confirmation); type **3** = skip installing Python for now, and re-run this installer whenever you're ready
 > 3. **Installing components** (step 2 of 3): the two small packages needed for `.kgg` (pycryptodome / numpy) are installed automatically, once only
 > 4. **Creating the shortcut** (step 3 of 3): a **"KuGou Unlocker"** icon appears on your desktop
 > 5. When you see the green "**Installation complete!**", everything is installed
 >
-> 💡 If downloading Python automatically fails, the wizard opens the official download page; install from there (remember to tick `Add python.exe to PATH`) and double-click `install_windows.bat` once more.
+> 💡 If the bundled installer is missing and the online download fails too, the wizard opens the official download page; install from there (remember to tick `Add python.exe to PATH`) and double-click `install_windows.bat` once more.
 > 💡 To launch later, you can also double-click **`start_kugou_unlocker.bat`** in the folder.
 
 > 💡 **Did the one-click install fail?** No problem — install Python manually with the method below (just follow along, no command line needed), then double-click `install_windows.bat` once more.
@@ -186,7 +188,7 @@ A: The script only checks PATH and common install locations (portable or Conda i
 A: No problem — double-click `start_kugou_unlocker.bat` in the folder to open the app, or run the one-click installer once more to create it.
 
 **Q: Does converting need internet? Administrator rights?**
-A: Conversion is **fully offline** — your music is never uploaded; only installing Python and the components needs internet. Administrator rights are normally **not** required (Python installs into your own user folder).
+A: Conversion is **fully offline** — your music is never uploaded. Installing Python uses the **offline installer bundled with this package**, so no internet there either; only the two small components are downloaded once from the internet. Administrator rights are normally **not** required (Python installs into your own user folder).
 
 **Q: How do I uninstall this tool?**
 A: It's portable — deleting the extracted folder and the desktop shortcut is the whole uninstall; nothing is written to the registry. The Python and components installed earlier stay where they are and don't affect anything else.
